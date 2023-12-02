@@ -1,0 +1,95 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --cinza: #7C7C7C2B;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://source.unsplash.com/1600x900/?landscape");
+}
+
+#box-main {
+    background: var(--preto);
+    opacity: 0.8;
+    border-radius: 25px;
+    padding: 25px;
+    width: 95%;
+    max-width: 450px;
+}
+
+
+#input-cidade {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 18px;
+    background-color: var(--cinza);
+    color:var(--branco);
+    width: calc(100% - 70px);
+}
+
+#button-buscar {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: var(--cinza);
+    cursor: pointer;
+    float: right;
+
+}
+
+#image-buscar {
+    width: 20px;
+
+}
+#informacao-cidade {
+    margin-top: 30px;
+    
+}
+#cidade {
+    color: var(--branco);
+    font-size: 28px;
+    font-weight: 300;
+
+}
+
+#temperatura {
+    font-size: 20px;
+    color: var(--branco);
+    margin-top: 20px;
+
+}
+
+
+#informacoes-tempo {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+#tempo {
+    color: var(--branco);
+    margin-left: 20px;
+
+}
+
+#umidade {
+    color: var(--branco);
+    margin-top: 20px;
+
+}
