@@ -8,7 +8,7 @@
 :root {
     --branco: #FFFFFF;
     --preto: #000000;
-    --cinza: #7C7C7C2B;
+    --cinza: #7C7C7C7C;
 }
 
 body {
@@ -18,6 +18,8 @@ body {
     justify-content: center;
     align-items: center;
     background-image: url("https://source.unsplash.com/1600x900/?landscape");
+    background-size: cover;
+    background-position: cen;
 }
 
 #box-main {
@@ -27,6 +29,12 @@ body {
     padding: 25px;
     width: 95%;
     max-width: 450px;
+}
+#titulo {
+    color: var(--branco);
+    font-size: 24px;
+    font-weight: 600;
+
 }
 
 
@@ -51,6 +59,9 @@ body {
     float: right;
 
 }
+#button-buscar:hover {
+    background-color: var(--branco);
+} 
 
 #image-buscar {
     width: 20px;
@@ -84,7 +95,7 @@ body {
 
 #tempo {
     color: var(--branco);
-    margin-left: 20px;
+    text-transform: capitalize;
 
 }
 
