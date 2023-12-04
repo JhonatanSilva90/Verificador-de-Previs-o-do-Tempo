@@ -104,3 +104,16 @@ body {
     margin-top: 20px;
 
 }
+
+/* Adicionando regras de mídia para tornar o layout responsivo */
+@media only screen and (max-width: 600px) {
+    #box-main {
+        width: 100%;
+        max-width: none;
+    }
+
+    #input-cidade,
+    #button-buscar {
+        width: 100%;
+    }
+}
