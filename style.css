@@ -1,105 +1,143 @@
+:root {
+  --cor-white: #ffffff;
+  --cor-black: hsl(0, 0%, 0%);
+  --cor-yellow: #ffff00;
+  --cor-footer: #2f2e2e;
+}
 * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 :root {
-    --branco: #FFFFFF;
-    --preto: #000000;
-    --cinza: #7C7C7C7C;
+  --branco: #ffffff;
+  --preto: #000000;
+  --cinza: #7c7c7c7c;
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("https://source.unsplash.com/1600x900/?landscape");
-    background-size: cover;
-    background-position: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
+  background-size: cover;
+  background-position: center;
 }
 
 #box-main {
-    background: var(--preto);
-    opacity: 0.8;
-    border-radius: 25px;
-    padding: 25px;
-    width: 95%;
-    max-width: 450px;
+  background: var(--preto);
+  opacity: 0.8;
+  border-radius: 25px;
+  padding: 25px;
+  width: 95%;
+  max-width: 450px;
 }
 #titulo {
-    color: var(--branco);
-    font-size: 24px;
-    font-weight: 600;
-
+  color: var(--branco);
+  font-size: 24px;
+  font-weight: 600;
 }
 
-
 #input-cidade {
-    border: none;
-    outline: none;
-    padding: 10px;
-    border-radius: 25px;
-    font-size: 18px;
-    background-color: var(--cinza);
-    color:var(--branco);
-    width: calc(100% - 70px);
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 18px;
+  background-color: var(--cinza);
+  color: var(--branco);
+  width: calc(100% - 70px);
 }
 
 #button-buscar {
-    border: none;
-    outline: none;
-    padding: 10px;
-    border-radius: 50px;
-    background-color: var(--cinza);
-    cursor: pointer;
-    float: right;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: var(--cinza);
+  cursor: pointer;
+  float: right;
 }
 #button-buscar:hover {
-    background-color: var(--branco);
-} 
+  background-color: var(--branco);
+}
 
 #image-buscar {
-    width: 20px;
-
+  width: 20px;
 }
 #informacao-cidade {
-    margin-top: 30px;
-    
+  margin-top: 30px;
 }
 #cidade {
-    color: var(--branco);
-    font-size: 28px;
-    font-weight: 300;
-
+  color: var(--branco);
+  font-size: 28px;
+  font-weight: 300;
 }
 
 #temperatura {
-    font-size: 20px;
-    color: var(--branco);
-    margin-top: 20px;
-
+  font-size: 20px;
+  color: var(--branco);
+  margin-top: 20px;
 }
 
-
 #informacoes-tempo {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
 }
 
 #tempo {
-    color: var(--branco);
-    text-transform: capitalize;
-
+  color: var(--branco);
+  text-transform: capitalize;
 }
 
 #umidade {
-    color: var(--branco);
-    margin-top: 20px;
+  color: var(--branco);
+  margin-top: 20px;
+}
 
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center; /* Alinha os itens no centro do eixo Y */
+  width: 100%; /* Para que o footer ocupe todo o eixo X da página */
+  color: var(--cor-white);
+  padding: 20px; /* Tamanho do eixo Y do footer */
+  background-color: var(--cor-footer);
+}
+
+.footer span:first-child {
+  color: var(--cor-yellow);
+}
+.footer span:last-child {
+  color: var(--cor-white);
+}
+
+.logo-footer {
+  font-family: "Tektur", sans-serif;
+  font-size: 1rem;
+  background-color: var(--cor-footer);
+}
+
+.footer a {
+  background-color: var(--cor-footer);
+}
+.footer img {
+  background-color: var(--cor-footer);
+}
+.footer p {
+  background-color: var(--cor-footer);
+}
+
+.links-footer {
+  display: flex;
+  background-color: var(--cor-footer);
+  gap: 1rem;
 }
